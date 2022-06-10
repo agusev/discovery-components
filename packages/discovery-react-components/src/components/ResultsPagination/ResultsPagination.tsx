@@ -112,6 +112,8 @@ const ResultsPagination: FC<ResultsPaginationProps> = ({
   const reset = useCallback(
     ({ triggerOnChange }: ResetOptions) => {
       setCurrentPage(1);
+      // This is structured as a counter so that the `key` prop of the Carbon pagination component
+      // updates (triggering a full re-render) in a simple and performant manner
       setResetCounter(resetCounter + 1);
       if (triggerOnChange) {
         handleOnChange({ page: 1, pageSize: resultsPerPage });
