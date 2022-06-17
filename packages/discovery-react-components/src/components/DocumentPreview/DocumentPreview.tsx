@@ -191,7 +191,7 @@ function PreviewDocument({
   hideToolbarControls,
   setHideToolbarControls,
   highlight,
-  disableTextLayer,
+  disableTextLayer = false,
   setCurrentPage,
   fallbackComponent
 }: PreviewDocumentProps): ReactElement | null {

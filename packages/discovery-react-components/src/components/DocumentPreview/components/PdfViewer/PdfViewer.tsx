@@ -61,7 +61,7 @@ const PdfViewer: FC<Props> = ({
   scale,
   document,
   textLayerClassName,
-  disableTextLayer = false,
+  disableTextLayer,
   setPageCount,
   setLoading,
   setHideToolbarControls,
